@@ -1,0 +1,4 @@
+dependencies {
+    compile 'org.eclipse.persistence:eclipselink:2.5.2'
+    compile 'com.h2database:h2:1.4.187'
+}
