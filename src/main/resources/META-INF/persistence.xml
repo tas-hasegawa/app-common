@@ -8,6 +8,11 @@
             <property name="javax.persistence.jdbc.url" value="jdbc:h2:file:./db/jersey-app" />
             <property name="javax.persistence.jdbc.user" value="sa" />
             <property name="javax.persistence.jdbc.password" value=""/>
+
+            <!-- EclipseLinkのテーブル自動作成設定 -->
+            <property name="eclipselink.ddl-generation" value="create-tables" />
+            <property name="eclipselink.ddl-generation.output-mode" value="database" />
+            <property name="eclipselink.application-location" value="C:\work"/>
         </properties>
     </persistence-unit>
 </persistence>
