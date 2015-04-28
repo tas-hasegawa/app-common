@@ -5,14 +5,17 @@
         <exclude-unlisted-classes>false</exclude-unlisted-classes>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="org.h2.Driver" />
-            <property name="javax.persistence.jdbc.url" value="jdbc:h2:file:./db/jersey-app" />
+            <property name="javax.persistence.jdbc.url" value="jdbc:h2:file:c:\db\jersey-app" />
             <property name="javax.persistence.jdbc.user" value="sa" />
             <property name="javax.persistence.jdbc.password" value=""/>
 
             <!-- EclipseLinkのテーブル自動作成設定 -->
-            <property name="eclipselink.ddl-generation" value="create-tables" />
-            <property name="eclipselink.ddl-generation.output-mode" value="database" />
-            <property name="eclipselink.application-location" value="C:\work"/>
+            <property name="eclipselink.ddl-generation" value="create-tables"/>
+            <property name="eclipselink.ddl-generation.output-mode" value="both"/>
+            <!--<property name="eclipselink.ddl-generation.output-mode" value="database"/>-->
+            <!--<property name="eclipselink.ddl-generation.output-mode" value="sql-script" />-->
+            <property name="eclipselink.application-location" value="../master/ddl"/>
+            <property name="eclipselink.create-ddl-jdbc-file-name" value="jersey-app.sql"/>
         </properties>
     </persistence-unit>
 </persistence>
